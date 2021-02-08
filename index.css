@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -9,110 +11,176 @@ html {
 }
 
 :root {
-    --fondo: #1B2B48;
-    --fondo2: #182742;
-    --white: #FFFFFF;
+    --primary-color: white;
+    --secondary-color: #182742;
+    --highlight-color: #e6ffe0;
+
     --turquesa: #B5FFFF;
     --azul: #98B7FF;
     --rosado: #FFCBE9;
     --amarillo: #FFF3C5;
+
+    --dt-padding: 12px;
+    --dt-padding-s: 6px;
+    --dt-padding-xs: 2px;
+
+    --dt-border-radius: 3px;
 }
 
 body {
 	background: var(--white);
-	font-family: 'Segoe UI', sans-serif;
+	font-family: 'Noto Sans', sans-serif;
 	font-size: 14px;
+    color: var(--secondary-color);
 }
 
 a {
 	text-decoration: none;
 }
 
+button {
+    outline: none;
+}
 
 /* ----------------- */
-/* CONTAINER */
+/* BODY */
 /* ----------------- */
 
-.bg-light {
+.material-icons {
+    font-size: 16px;
+}
+
+.datatable-container {
+    color: var(--secondary-color);
+    width: 600px;
+    margin: 0 auto;
+    padding: var(--dt-padding);
+    font-size: 1em;
+    /* border: solid 2px var(--secondary-color); */
+    border-radius: var(--dt-border-radius);
+}
+
+.datatable-container .header h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.datatable-container .header .add div {
+    margin: var(--dt-padding) 0;
+}
+
+.datatable-container .header .add #btn-task-form {
+    margin-bottom: var(--dt-padding);
+}
+
+.datatable-container .header .add input {
+    padding: 5px;
+    margin: 5px 0;
+    border: solid 1px var(--secondary-color);
+    border-radius: var(--dt-border-radius);
+    outline: none;
+}
+
+.datatable-container .header-tools {
+    margin: 12px 0;
     display: flex;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: space-around;
 }
 
-.container {
-    width: 90%;
-	max-width: 800px;
-    /* margin: auto; */
+.datatable-container .header-tools .search {
+    width: 40%;
+}
+
+.datatable-container .header-tools .search .search-input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    display: block;
+    box-sizing: border-box;
+    border: solid 1px var(--secondary-color);
+    border-radius: var(--dt-border-radius);
+    outline: none;
+}
+
+.datatable-container .header-tools .tools {
+    width: 70%;
+}
+
+.datatable-container .header-tools .tools ul {
+    margin: 0;
+    padding: 0;
     display: flex;
+    justify-content: start;
+    align-items: baseline;
 }
 
-#task-form {
-    display: flex;
+.datatable-container .header-tools .tools ul li {
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+    align-items: baseline;
 }
 
-#task-form input {
-    width: 150px;
-    height: 25px;
+.datatable-container .header-tools .tools button {
+    color: var(--secondary-color-color);
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: var(--secondary-color);
+    background-color: transparent;
+    cursor: pointer;
+    padding: var(--dt-padding-s);
 }
 
-
-#task-form button {
-    width: 65px;
-    height: 25px;
-    margin: 0 10px;
-    background-color: #6cffa9;
+.datatable-container .header-tools .tools button:hover {
+    background-color: var(--highlight-color);
+    border-radius: var(--dt-border-radius);
 }
 
-#task-form #task-description {
-    margin: 0 10px;
+.boton {
+    color: var(--secondary-color-color);
+    box-sizing: border-box;
+    outline: none;
+    border: solid 1px --secondary-color;
+    border-radius: var(--dt-border-radius);
+    background-color: transparent;
+    cursor: pointer;
+    padding: var(--dt-padding-s);
 }
 
-.container #tasks-container{
-    margin: 25px 0px;
-    display: flex;
-    flex-wrap: wrap;
+.moneda {
+    font-size: 10px;
 }
 
-#card-product {
-    /* background-color: #98B7FF; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 800px;
-    height: 50px;
-    min-width: 300px;
-    margin-right: 25px;
-}
-
-#card-product p {
+.precio {
     font-size: 18px;
-    margin: 0 10px;
+    font-weight: 600;
 }
 
-#card-product p {
-    font-size: 18px;
-    margin: 0 10px;
+.boton:hover {
+    background-color: var(--highlight-color);
+    border-radius: var(--dt-border-radius);
 }
 
-.btn-delete {
-    width: 80px;
-    height: 25px;
-    background-color: #797979;
-    color: white;
+.datatable-container .datatable {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-.btn-edit {
-    width: 80px;
-    height: 25px;
+.datatable-container .datatable,
+.datatable-container .datatable th,
+.datatable-container .datatable td {
+    padding: var(--dt-padding) var(--dt-padding);
 }
 
-#card-product h3 {
-    min-width: 150px;
-    max-width: 150px;
-    font-size: 18px;
+.datatable-container .datatable td {
+    border-top: solid 1px var(--secondary-color);
 }
 
-.precio-table p {
-    width: 100px;
-    display: flex;
-    justify-content: left;
+.datatable-container .datatable tbody tr:nth-child(even) {
+    background-color: var(--highlight-color);
 }
+
+/* .datatable-container .datatable tbody tr:hover {
+    background-color: var(--highlight-color);
+} */

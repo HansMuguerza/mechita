@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", async (e) => {
     querySnapshot.forEach((doc) => {
       const task = doc.data();
 
-      tasksContainer.innerHTML += `<div class="card card-body mt-2 border-primary" id="card-product">
+      /* tasksContainer.innerHTML += `<div class="card card-body mt-2 border-primary" id="card-product">
     <h3 class="h5">${task.title.toUpperCase()}</h3>
     <div class="precio-table">
       <p>S/ ${task.description.toUpperCase()}</p>
@@ -53,6 +53,18 @@ window.addEventListener("DOMContentLoaded", async (e) => {
       </button>
     </div>
   </div>`;
+    }); */
+
+    tasksContainer.innerHTML += `<tr>
+    <td>${task.title.toUpperCase()}</td>
+    <td class="precio"><span class="moneda">S/ </span>${task.description.toUpperCase()}</td>
+    <td>${task.medida.toUpperCase()}</td>
+    <div>
+      <td><button class="boton btn-edit" data-id="${doc.id}"><span class="material-icons">create</span>Editar
+      </button></td>
+      <td><button class="boton btn-delete" data-id="${doc.id}"><span class="material-icons">delete</span></button></td>
+    </tr>
+    </div>`;
     });
 
     const btnsDelete = tasksContainer.querySelectorAll(".btn-delete");
@@ -79,7 +91,7 @@ window.addEventListener("DOMContentLoaded", async (e) => {
 
           editStatus = true;
           id = doc.id;
-          taskForm["btn-task-form"].innerText = "Update";
+          taskForm["btn-task-form"].innerText = "Actualizar";
 
         } catch (error) {
           console.log(error);
@@ -108,7 +120,7 @@ taskForm.addEventListener("submit", async (e) => {
 
       editStatus = false;
       id = '';
-      taskForm['btn-task-form'].innerText = 'Save';
+      taskForm['btn-task-form'].innerText = 'Guardar';
     }
 
     taskForm.reset();
