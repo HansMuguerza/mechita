@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fondo: #1B2B48;
+    --fondo2: #182742;
+    --white: #FFFFFF;
+    --turquesa: #B5FFFF;
+    --azul: #98B7FF;
+    --rosado: #FFCBE9;
+    --amarillo: #FFF3C5;
+}
+
+body {
+	background: var(--white);
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* ----------------- */
+/* CONTAINER */
+/* ----------------- */
+
+.bg-light {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+	max-width: 800px;
+    /* margin: auto; */
+    display: flex;
+}
+
+#task-form {
+    display: flex;
+}
+
+#task-form input {
+    width: 150px;
+    height: 25px;
+}
+
+
+#task-form button {
+    width: 65px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+#task-form #task-description {
+    margin: 0 10px;
+}
+
+.container #tasks-container{
+    margin: 25px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#card-product {
+    /* background-color: #98B7FF; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    height: 50px;
+    min-width: 300px;
+    margin-right: 25px;
+}
+
+#card-product p {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+#card-product p {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.btn-delete {
+    width: 80px;
+    height: 25px;
+    background-color: #797979;
+    color: white;
+}
+
+.btn-edit {
+    width: 80px;
+    height: 25px;
+}
+
+#card-product h3 {
+    min-width: 150px;
+    max-width: 150px;
+    font-size: 18px;
+}
+
+.precio-table p {
+    width: 100px;
+    display: flex;
+    justify-content: left;
+}
