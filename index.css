@@ -59,6 +59,7 @@ a {
     width: 65px;
     height: 25px;
     margin: 0 10px;
+    background-color: #6cffa9;
 }
 
 #task-form #task-description {

@@ -37,12 +37,12 @@ window.addEventListener("DOMContentLoaded", async (e) => {
       const task = doc.data();
 
       tasksContainer.innerHTML += `<div class="card card-body mt-2 border-primary" id="card-product">
-    <h3 class="h5">${task.title}</h3>
+    <h3 class="h5">${task.title.toUpperCase()}</h3>
     <div class="precio-table">
-      <p>S/ ${task.description}</p>
+      <p>S/ ${task.description.toUpperCase()}</p>
     </div>
     <div class="medida-table">
-      <p>${task.medida}</p>
+      <p>${task.medida.toUpperCase()}</p>
     </div>
     <div>
       <button class="btn btn-secondary btn-edit" data-id="${doc.id}">
