@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <title>PDV</title>
+</head>
+<body>
+
+    <div class="pdv-body">
+        <span>Valor #1</span>
+        <input type="number" id="txt_campo_1" class="monto" onchange="sumar();" />
+        <br/>
+
+        <span>Valor #2</span>
+        <input type="number" id="txt_campo_2" class="monto" onchange="sumar();" />
+        <br/>
+
+        <span>Valor #3</span>
+        <input type="number" id="txt_campo_3" class="monto" onchange="sumar();" />
+
+        <br>
+        <span>TOTAL </span>
+        <input type="number" id="total" value="0" readonly/>
+
+        <!-- <label>Valor 1 </label><input type="number" name="" id="valor1" step="0.001" oninput="calcular()"><br><br>
+        <label>Valor 2 </label><input type="number" name="" id="valor2" step="0.001" oninput="calcular()"><br><br>
+        <label>Total: </label><input type="number" name="" id="total" step="0.001" ><br><br>
+        <label>Pago</label><input type="number" name="" id="pago" step="0.001" oninput="calcularVuelto()"><br><br>
+        <label>Vuelto: </label><input type="number" name="" id="vuelto" step="0.001" ><br><br> -->
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

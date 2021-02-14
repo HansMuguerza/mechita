@@ -50,6 +50,12 @@ button {
     font-size: 16px;
 }
 
+.pdv span {
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
 .datatable-container {
     color: var(--secondary-color);
     width: 600px;
@@ -184,3 +190,8 @@ button {
 /* .datatable-container .datatable tbody tr:hover {
     background-color: var(--highlight-color);
 } */
+
+.pdv-body {
+    width: 60%;
+    margin: 0 auto;
+}
