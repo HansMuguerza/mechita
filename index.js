@@ -143,5 +143,14 @@ function sumar()
         }
     });
 
-    $total.value = subtotal;
+    $total.value = subtotal.toFixed(2);
+}
+
+function calcularVuelto() {
+    try {
+        var a = parseFloat(document.getElementById("pago").value) || 0,
+            b = parseFloat(document.getElementById("total").value) || 0;
+
+        document.getElementById("vuelto").value = a - b.toFixed(2);
+    } catch (e) {}
 }

@@ -35,9 +35,14 @@
                 <span>TOTAL </span>
                 <input type="number" id="total" value="0" readonly/>
             </div>
+
             <div class="valores">
                 <span>Pago</span>
-                <input type="number" id="txt_campo_3" class="monto" onchange="sumar();" />
+                <input type="number" id="pago" class="pago" onchange="calcularVuelto();" />
+            </div>
+            <div class="valores">
+                <span>Vuelto</span>
+                <input type="number" id="vuelto" value="0" readonly/>
             </div>
         </div>
 
