@@ -191,7 +191,31 @@ button {
     background-color: var(--highlight-color);
 } */
 
+.pdv-h1 {
+    text-align: center;
+}
+
 .pdv-body {
     width: 60%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.pdv-body input {
+    height: 25px;
+    padding: 0 5px;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.pdv-body .lat2 {
+    margin: 15px 0;
+}
+
+.pdv-body .valores {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
 }
