@@ -96,6 +96,7 @@ button {
 
 .datatable-container .header-tools .search {
     width: 40%;
+    margin-bottom: 20px;
 }
 
 .datatable-container .header-tools .search .search-input {
@@ -191,11 +192,11 @@ button {
     background-color: var(--highlight-color);
 } */
 
-.pdv-h1 {
+.sdv-h1 {
     text-align: center;
 }
 
-.pdv-body {
+.sdv-body {
     width: 60%;
     margin: 0 auto;
     display: flex;
@@ -203,19 +204,27 @@ button {
     padding-top: 30px;
 }
 
-.pdv-body input {
+.sdv-body input {
+    width: 150px;
     height: 25px;
     padding: 0 5px;
     margin: 0 10px;
     font-size: 18px;
 }
 
-.pdv-body .lat2 {
+.sdv-body .lat2 {
     margin: 15px 0;
 }
 
-.pdv-body .valores {
+.sdv-body .valores {
     margin: 15px 0;
     display: flex;
     align-items: center;
+}
+
+.sdv-body #total {
+    height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
