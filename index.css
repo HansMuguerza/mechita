@@ -231,7 +231,7 @@ button {
 }
 
 .total-content .total-cuerpo {
-    height: 100px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
