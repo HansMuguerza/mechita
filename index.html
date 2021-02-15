@@ -13,107 +13,68 @@
   <!-- NORMALIZE CSS -->
   <link rel="stylesheet" href="normalize.css" />
 
-  <!-- INDEX CSS -->
-  <link rel="stylesheet" href="index.css" />
-
-  <!-- BOOTSWATCH -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/pulse/bootstrap.min.css"> -->
-
   <!-- ANIMATE CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <!-- INDEX CSS -->
+    <link rel="stylesheet" href="index.css" />
+
 
 </head>
 
 <body class="bg-light">
 
-  
-<!--   <div class="container p-4">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h1 class="h4">Tienda Mechita</h1>
+  <!-- NEW DESIGN CRUD -->
 
-            <form id="task-form">
-              <div class="ingresar-producto">
-                <input type="text" id="task-title" class="form-control" class="Task Title" placeholder="Producto"
-                  autofocus>
-              </div>
-              <div class="ingresar-precio">
-                <input id="task-description" rows="3" class="form-control" placeholder="Precio"></input>
-              </div>
+  <div class="datatable-container">
 
-              <div class="ingresar-medida">
-                <input id="task-medida" rows="3" class="form-control" placeholder="Medida"></input>
-              </div>
-
-              <button class="boton" id="btn-task-form">
-                Guardar
-              </button>
-
-            </form>
+    <div class="header">
+      <h1 class="h4">Tienda Mechita</h1>
+      <div class="sdv-content">
+        <a href="sdv.html" class="sdv">SDV<span class="material-icons">store</span></a>
+      </div>
+      <div class="">
+        <form id="task-form" class="add">
+          <div class="ingresar-producto">
+            <input type="text" id="task-title" class="form-control" class="Task Title" placeholder="Producto">
           </div>
-        </div>
-      </div> -->
-
-      <!-- Tasks List -->
-      <!-- <div class="col-md-6" id="tasks-container"></div> -->
-
-
-      <!-- NEW DESIGN CRUD -->
-        <div class="datatable-container">
-
-          <div class="header">
-            <h1 class="h4">Tienda Mechita</h1>
-            <div class="sdv-content">
-              <a href="sdv.html" class="sdv">SDV<span class="material-icons">store</span></a>
-            </div>
-            <div class="">
-              <form id="task-form" class="add">
-                <div class="ingresar-producto">
-                  <input type="text" id="task-title" class="form-control" class="Task Title" placeholder="Producto">
-                </div>
-                <div class="ingresar-precio">
-                  <input id="task-description" rows="3" class="form-control" placeholder="Precio"></input>
-                </div>
-
-                <div class="ingresar-medida">
-                  <input id="task-medida" rows="3" class="form-control" placeholder="Medida"></input>
-                </div>
-
-                <button class="boton" id="btn-task-form">
-                  Guardar
-                </button>
-
-              </form>
-            </div>
+          <div class="ingresar-precio">
+            <input id="task-description" rows="3" class="form-control" placeholder="Precio"></input>
           </div>
 
-          <div class="header-tools">
-            <div class="search">
-              <input type="text" name="" id="" class="search-input" placeholder="Buscar producto" autofocus>
-            </div>
+          <div class="ingresar-medida">
+            <input id="task-medida" rows="3" class="form-control" placeholder="Medida"></input>
           </div>
 
-          <table class="datatable">
-            <thead>
-              <tr>
-                <th>Producto</th>
-                <th>Precio</th>
-                <th>Medida</th>
-              </tr>
-            </thead>
+          <button class="boton" id="btn-task-form">
+            Guardar
+          </button>
 
-            <tbody id="tasks-container">
-              
-            </tbody>
-          </table>
+        </form>
+      </div>
+    </div>
 
-          <div class="footer-tools">
+    <div class="header-tools">
+      <div class="search">
+        <input type="text" name="" id="" class="search-input" placeholder="Buscar producto" autofocus>
+      </div>
+    </div>
 
-          </div>
-        </div>
+    <table class="datatable">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Medida</th>
+        </tr>
+      </thead>
 
+      <tbody id="tasks-container">
+        
+      </tbody>
+    </table>
+
+    <div class="footer-tools">
 
     </div>
   </div>

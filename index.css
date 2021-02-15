@@ -192,39 +192,87 @@ button {
     background-color: var(--highlight-color);
 } */
 
+
+/* ---------------------- */
+/* SISTEMA DE VENTAS */
+/* --------------------- */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .sdv-h1 {
     text-align: center;
+    font-size: 24px;
+    margin-top: 35px;
 }
 
-.sdv-body {
-    width: 60%;
-    margin: 0 auto;
+.total-content {
+    background-color: #484848;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.total-content span {
+    color: white;
+}
+
+.total-content input {
+    height: 80%;
+    width: 40%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.total-content .total-cuerpo {
+    height: 100px;
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 30px;
-}
-
-.sdv-body input {
-    width: 150px;
-    height: 25px;
-    padding: 0 5px;
-    margin: 0 10px;
-    font-size: 18px;
-}
-
-.sdv-body .lat2 {
-    margin: 15px 0;
-}
-
-.sdv-body .valores {
-    margin: 15px 0;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.sdv-body #total {
-    height: 50px;
+.pdv-container p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.lat1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.valores-bg {
+    width: 100%;
+    background-color: #F1F1F1;
+    margin-bottom: 5px;
+}
+
+.valores {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.valores span {
     font-size: 22px;
+}
+
+.valores input {
+    height: 80%;
+    width: 60%;
+    color: #484848;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    font-size: 28px;
     font-weight: bold;
-    margin-bottom: 30px;
 }
