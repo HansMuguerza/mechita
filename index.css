@@ -1,41 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-:root {
-    --primary-color: white;
-    --secondary-color: #182742;
-    --highlight-color: #e6ffe0;
-
-    --turquesa: #B5FFFF;
-    --azul: #98B7FF;
-    --rosado: #FFCBE9;
-    --amarillo: #FFF3C5;
-
-    --dt-padding: 12px;
-    --dt-padding-s: 6px;
-    --dt-padding-xs: 2px;
-
-    --dt-border-radius: 3px;
-}
-
 body {
-	background: var(--white);
-	font-family: 'Noto Sans', sans-serif;
-	font-size: 14px;
+    background: var(--white);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
     color: var(--secondary-color);
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 button {
@@ -201,6 +184,7 @@ button {
     --sdv-primary-color: #484848;
     --sdv-secondary-color: #FFFF;
     --sdv-highlight-color: #F1F1F1;
+    --sdv-alea-color: #313131;
 }
 
 
@@ -224,11 +208,11 @@ button {
 .static {
     width: 100%;
     position: fixed;
-    bottom: 0;
+    top: 0;
 }
 
 .total-content {
-    background-color: var(--sdv-primary-color);
+    background-color: var(--sdv-alea-color);
     width: 100%;
 }
 
@@ -276,6 +260,10 @@ button {
     text-align: right;
     font-size: 28px;
     font-weight: bold;
+}
+
+.pdv-container {
+    margin-top: 90px;
 }
 
 .pdv-container p {

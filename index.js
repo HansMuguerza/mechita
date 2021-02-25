@@ -55,7 +55,7 @@ window.addEventListener("DOMContentLoaded", async (e) => {
   </div>`;
     }); */
 
-    tasksContainer.innerHTML += `<tr>
+      tasksContainer.innerHTML += `<tr>
     <td>${task.title.toUpperCase()}</td>
     <td class="precio"><span class="moneda">S/ </span>${task.description.toUpperCase()}</td>
     <td>${task.medida.toUpperCase()}</td>
@@ -133,24 +133,23 @@ taskForm.addEventListener("submit", async (e) => {
 
 
 
-function sumar()
-{
-    const $total = document.getElementById('total');
-    let subtotal = 0;
-    [ ...document.getElementsByClassName( "monto" ) ].forEach( function ( element ) {
-        if(element.value !== '') {
-        subtotal += parseFloat(element.value);
-        }
-    });
+function sumar() {
+  const $total = document.getElementById('total');
+  let subtotal = 0;
+  [...document.getElementsByClassName("monto")].forEach(function (element) {
+    if (element.value !== '') {
+      subtotal += parseFloat(element.value);
+    }
+  });
 
-    $total.value = subtotal.toFixed(2);
+  $total.value = subtotal.toFixed(2);
 }
 
 function calcularVuelto() {
-    try {
-        var a = parseFloat(document.getElementById("pago").value) || 0,
-            b = parseFloat(document.getElementById("total").value) || 0;
+  try {
+    var a = parseFloat(document.getElementById("pago").value) || 0,
+      b = parseFloat(document.getElementById("total").value) || 0;
 
-        document.getElementById("vuelto").value = a - b.toFixed(2);
-    } catch (e) {}
+    document.getElementById("vuelto").value = a - b.toFixed(2);
+  } catch (e) {}
 }
